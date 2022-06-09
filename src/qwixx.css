@@ -1,0 +1,26 @@
+.number-box {
+    background-color: rgb(255, 255, 255, .8);
+    /* border-radius: 50%;
+    border-color: black; */
+}
+
+.row {
+    display: inline;
+    color: red;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-blue {
+    background-color: blue;
+}
