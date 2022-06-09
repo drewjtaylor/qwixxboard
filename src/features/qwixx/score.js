@@ -9,17 +9,16 @@ let row3score = scorerow(row3marks);
 let row4score = scorerow(row4marks);
 
 function scorerow(numberofmarks) {
-    let marksremaining = numberofmarks;
-    let rowscore = 0;
+    let score = 0;
     while (numberofmarks > 0) {
-        rowscore += numberofmarks;
+        score += numberofmarks;
         numberofmarks--;
     };
-    return rowscore
+    return score
 }
 
-function totalscore(row1, row2, row3, row4, penalties=0) {
-    return row1 + row2 + row3 + row4 - penalties
+function totalscore(row1score, row2score, row3score, row4score, penalties=0) {
+    return row1score + row2score + row3score + row4score - penalties
 }
 
 console.log(scorerow(row1marks));
