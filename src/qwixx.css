@@ -4,6 +4,11 @@
     border-color: black; */
 }
 
+.width90 {
+    width: 90%;
+    margin: auto;
+}
+
 .row {
     display: inline;
     color: red;
@@ -24,3 +29,4 @@
 .bg-blue {
     background-color: blue;
 }
+
