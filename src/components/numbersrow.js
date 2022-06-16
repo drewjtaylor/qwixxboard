@@ -1,6 +1,9 @@
-import NumberBox from "./numberbox";
+import NumberBox from "./NumberBox";
+import TotalBox from "./TotalBox";
+import { increaseMarks } from "./rowSlice";
+import { decreaseMarks } from "./rowSlice";
 
-const NumbersRow = (props) => {
+const NumbersRow = () => {
     return (
         <div className='row'>
             <div className="col">
@@ -36,9 +39,18 @@ const NumbersRow = (props) => {
             <div className="col">
                 <NumberBox num='12'/>
             </div>
+
+
+            {/* Totals should eventually be on bottom, but for now it's simple to keep it here until I figure how to make it work */}
             <div className="col">
-                <NumberBox num='🔒'/>
+                <TotalBox totalMarks={0}/>
             </div>
+
+{/* Blocked bottom row until I can figure out totals for just simple numbers */}
+            {/* <div className="col">
+                <NumberBox num='🔒'/>
+            </div> */}
+
         </div>
     )
 };

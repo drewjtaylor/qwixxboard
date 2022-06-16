@@ -1,8 +1,10 @@
+import { increaseMarks } from "./rowSlice";
+
 const TotalBox = (props) => {
     return (
-        <div>
-            {props.num}
-        </div>
+        <button onClick={() => {{increaseMarks(props.totalMarks); console.log(props.totalMarks)}}}>
+            {props.totalMarks}
+        </button>
     )
 };
 
