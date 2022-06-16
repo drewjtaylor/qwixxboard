@@ -1,10 +1,16 @@
-import { increaseMarks } from "./rowSlice";
+import { useState } from 'react';
 
-const TotalBox = (props) => {
+const TotalBox = () => {
+    const [totalForRow, setRowTotal] = useState(0);
+
+
     return (
-        <button onClick={() => {{increaseMarks(props.totalMarks); console.log(props.totalMarks)}}}>
-            {props.totalMarks}
-        </button>
+        <>  
+            <button >
+                {totalForRow}
+            </button>
+        </>
+        
     )
 };
 

@@ -1,5 +1,3 @@
-const totalMarks = 0;
-
 /**
  * Takes in the parameter and increases it by
  * @param {Integer} totalMarks 
