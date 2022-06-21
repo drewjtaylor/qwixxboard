@@ -1,7 +1,5 @@
 import NumberBox from "./NumberBox";
 import TotalBox from "./TotalBox";
-import { increaseMarks } from "./rowSlice";
-import { decreaseMarks } from "./rowSlice";
 
 const NumbersRow = () => {
     return (
@@ -43,7 +41,7 @@ const NumbersRow = () => {
 
             {/* Totals should eventually be on bottom, but for now it's simple to keep it here until I figure how to make it work */}
             <div className="col">
-                <TotalBox totalMarks={0}/>
+                <TotalBox totalMarks={5}/>
             </div>
 
 {/* Blocked bottom row until I can figure out totals for just simple numbers */}
